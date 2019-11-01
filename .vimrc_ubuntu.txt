@@ -1,0 +1,49 @@
+"Plugin Install
+
+set nocompatible
+filetype off
+set rtp+=~/.vim/bundle/Vundle.vim
+call vundle#begin()
+Bundle 'Valloric/YouCompleteMe'
+Plugin 'VundleVim/Vundle.vim'
+Plugin 'scrooloose/nerdtree'
+Plugin 'Raimondi/delimitMate'
+call vundle#end()
+filetype plugin indent on
+
+"Plugin Install_endline
+
+"syntax on
+"let g:ycm_global_ycm_extra_conf = '~/.vim/.ycm_extra_conf.py'
+
+let g:ycm_confirm_extra_conf = 0
+
+"To avoid conflict snippets
+
+let g:ycm_key_list_select_completion = ['<C-j>', '<Down>']
+color hackerman
+
+"nnoremap  ,ff :UltiSnipsEdit
+"let g:UltiSnipsExpandTrigger=""
+"let g:UltiSnipsListSnippets=""
+"let g:UltiSnipsJumpForwardTrigger=""
+"let g:UltiSnipsJumpBackwardTrigger=""
+"let g:UltiSnipsEditSplit="vertical"
+let delimitMate_expand_cr=1
+"IDE_Setting
+set noswapfile
+set autoindent " 자동 들여쓰기
+set t_Co=256
+set nu
+"set scrolloff=2
+"set wildmode=longest,list
+"set ts=4 "tag select
+"set sts=4 "st select
+"set cindent " C언어 자동 들여쓰기
+"set laststatus=2 " 상태바 표시 항상
+"set paste " 붙여넣기 계단현상 없애기
+set shiftwidth=2 " 자동 들여쓰기 너비 설정
+"set softtabstop=2
+set tabstop=2
+"set ruler " 현재 커서 위치 표시
+set statusline=\ %<%l:%v\ [%P]%=%a\ %h%m%r\ %F\
